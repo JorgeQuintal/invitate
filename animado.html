@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invitate</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="animado">
+    <header class="main-header" id="header">
+
+
+        <div class="header__content">
+            <h1 class="title">Invitate</h1>
+            <p class="subtitle">Diseñamos tu invitacion....</p>
+            <div class="links">
+                <a class="btn" href="index.html">Digital</a>
+                <a class="btn btn--ghost" href="animado.html">Animado</a>
+            </div>
+        </div>
+    </header>
+    <section id="invitaciones" class="invites-section" aria-label="Temáticas de invitaciones">
+        <div class="container">
+            <header class="heading">
+                <h2>Temáticas de invitaciones</h2>
+                <p>Elige una categoría para continuar</p>
+            </header>
+            <nav class="btn-grid" aria-label="Temáticas">
+                <a class="btn theme-boda" href="boda.html" title="Ver invitaciones de boda">
+                    <span class="icon" aria-hidden="true">
+        <!-- Anillo de boda -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 13a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="currentColor"/>
+          <path d="M8 9h8l-2-4 2-3H8l2 3-2 4Z" fill="currentColor"/>
+        </svg>
+      </span>
+                    <span class="label">Boda</span>
+                </a>
+
+                <a class="btn theme-infantil" href="infantil.html" title="Ver invitaciones infantiles">
+                    <span class="icon" aria-hidden="true">
+        <!-- Globo -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2c3.3 0 6 2.7 6 6 0 3.9-3.8 7-6 7s-6-3.1-6-7c0-3.3 2.7-6 6-6Zm-1 14c0 1.1-.9 2-2 2 .7 1.6 2.3 2 3 2s2.3-.4 3-2c-1.1 0-2-.9-2-2" fill="currentColor"/>
+        </svg>
+      </span>
+                    <span class="label">Infantil</span>
+                </a>
+
+                <a class="btn theme-xv" href="xv.html" title="Ver invitaciones para XV años">
+                    <span class="icon" aria-hidden="true">
+        <!-- Corona -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 8 7 12l5-7 5 7 4-4v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z" fill="currentColor"/>
+        </svg>
+      </span>
+                    <span class="label">XV Años</span>
+                </a>
+
+                <a class="btn theme-graduacion" href="graduacion.html" title="Ver invitaciones de graduación">
+                    <span class="icon" aria-hidden="true">
+        <!-- Birrete -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="m12 3 10 5-10 5L2 8l10-5Zm6 8v5a4 4 0 0 1-8 0v-1l2-1v2a2 2 0 0 0 4 0v-3l2-1Z" fill="currentColor"/>
+        </svg>
+      </span>
+                    <span class="label">Graduación</span>
+                </a>
+            </nav>
+        </div>
+
+    </section>
+    <section class="tarjetas-section">
+        <div class="tarjetas-container">
+            <div class="tarjeta" tabindex="0">
+                <div class="preview-wrapper">
+                    <img src="img/videoframe_7860.png" alt="Vista previa" class="preview">
+                    <button class="play-btn" aria-label="Reproducir video">▶</button>
+                </div>
+
+                <video class="video" width="100%" controls style="display:none;" playsinline>
+    <source src="img/vid.mp4" type="video/mp4">
+  </video>
+
+                <h3>Título de la tarjeta</h3>
+                <p>Descripción breve del video.</p>
+            </div>
+            <div class="tarjeta" tabindex="0">
+                <img src="img2.jpg" alt="Tarjeta 2">
+                <h3>Título 2</h3>
+                <p>Descripción corta 2</p>
+            </div>
+            <div class="tarjeta" tabindex="0">
+                <img src="img3.jpg" alt="Tarjeta 3">
+                <h3>Título 3</h3>
+                <p>Descripción corta 3</p>
+            </div>
+            <div class="tarjeta" tabindex="0">
+                <img src="img4.jpg" alt="Tarjeta 4">
+                <h3>Título 4</h3>
+                <p>Descripción corta 4</p>
+            </div>
+            <div class="tarjeta" tabindex="0">
+                <img src="img5.jpg" alt="Tarjeta 5">
+                <h3>Título 5</h3>
+                <p>Descripción corta 5</p>
+            </div>
+            <div class="tarjeta" tabindex="0">
+                <img src="img6.jpg" alt="Tarjeta 6">
+                <h3>Título 6</h3>
+                <p>Descripción corta 6</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para imagen ampliada -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+        <div class="modal-content">
+            <button id="closeModal" aria-label="Cerrar modal">&times;</button>
+            <img id="modalImage" src="" alt="">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+        </div>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const modal = document.getElementById('modal');
+                const modalImage = document.getElementById('modalImage');
+                const modalTitle = document.getElementById('modalTitle');
+                const modalDesc = document.getElementById('modalDesc');
+                const closeModal = document.getElementById('closeModal');
+
+                const tarjetas = document.querySelectorAll('.tarjeta');
+
+                tarjetas.forEach(tarjeta => {
+                    tarjeta.addEventListener('click', () => {
+                        const imgSrc = tarjeta.querySelector('img').src;
+                        const title = tarjeta.querySelector('h3').textContent;
+                        const desc = tarjeta.querySelector('p').textContent;
+
+                        modalImage.src = imgSrc;
+                        modalTitle.textContent = title;
+                        modalDesc.textContent = desc;
+
+                        modal.classList.add('show');
+                        modal.focus();
+                    });
+                });
+
+                closeModal.addEventListener('click', () => {
+                    modal.classList.remove('show');
+                });
+
+                // Cerrar modal al hacer clic fuera del contenido
+                modal.addEventListener('click', e => {
+                    if (e.target === modal) {
+                        modal.classList.remove('show');
+                    }
+                });
+
+                // Cerrar modal con tecla Escape
+                document.addEventListener('keydown', e => {
+                    if (e.key === 'Escape' && modal.classList.contains('show')) {
+                        modal.classList.remove('show');
+                    }
+                });
+            });
+        </script>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
